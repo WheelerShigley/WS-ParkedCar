@@ -27,6 +27,21 @@ namespace CSC_317_Team_Project_Customer_Accounts {
             
             lot.setCar(0, "j","k","l", 14);
             lot.printCars();
+
+            //charging a car example
+            for(int i = 0; i < 59; i++) { lot.tickMinute(); }
+            lot.printCars();
+            lot.tickMinute();
+            lot.printCars();
+            lot.tickMinute();
+            lot.printCars();
+
+            lot.addCar("m","n","o", 14);
+            lot.printCars();
+
+            for(int i = 0; i < 15; i++) { lot.tickMinute(); }
+            lot.printCars();
+
         }
     }
 }
